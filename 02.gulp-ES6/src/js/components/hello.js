@@ -2,14 +2,18 @@
 * hello
 */
 
-class Hello {
-  constructor() {
-    this.message = 'Hello!!';
+export default class Hello {
+  constructor(message = '') {
+    this.message = message;
   }
 
   say() {
-    console.log('aaa');
+    console.log(this.message);
+  }
+
+  later() {
+    return new Promise((resolve, reject) => {
+      setTimeout(resolve, 1000);
+    });
   }
 }
-
-module.exports = Hello;

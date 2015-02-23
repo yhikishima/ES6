@@ -2,11 +2,9 @@
 * @ES6-script
 */
 
-(function() {
-  var Hello = require('./components/hello');
-  var hello = new Hello();
+
+  import Hello from './components/hello';
+  var hello = new Hello('Hello, Promise');
   hello.say();
+  hello.later().then(() => hello.say());
 
-  document.write(hello.message);
-
-})();
