@@ -2,8 +2,14 @@
 * hello
 */
 
-function Hello() {
-  this.message = 'Hello!!';
+class Hello {
+  constructor() {
+    this.message = 'Hello!!';
+  }
+
+  say() {
+    console.log('aaa');
+  }
 }
 
 module.exports = Hello;

@@ -14,7 +14,7 @@ module.exports = {
   js: {
     src: src + '/js/**',
     dist: dist + '/js',
-    uglify: true
+    uglify: false
   },
 
   // webpackの設定
